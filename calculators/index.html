@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculators</title>
+    <link rel="stylesheet" href="stylesheet.css" media="screen">
+  </head>
+  <body>
+    <header id="hero">
+      <div class="herotext">
+              <h1>CALCULATORS - JAVASCRIPT</h1>
+      </div>
+    </header>
+    <div class="row">
+      <div id="left">
+        <div class="inside">
+          <h2>Fahrenheit to Celcius</h2>
+        </div>
+
+        <div class="panel temp">
+          <input type="text" class="temp-f" placeholder="℉" id="imputemp">⇄
+          <input type="text" class="temp-c" placeholder="℃" id="inputemp">
+        </div>
+      </div>
+      <div id="center">
+        <div class="inside">
+          <h2>Radius to Circumference</h2>
+        </div>
+        <div class="panel circum">
+          <div class="circle">
+          </div>
+          <input type="text" class="circum-r" placeholder="radius">
+          <input type="text" class="circum-c" placeholder="cir" disabled>
+        </div>
+      </div>
+      <div id="right">
+        <div class="inside">
+          <h2>Pythagorean Theorem</h2>
+        </div>
+
+        <div class="panel py">
+          <input type="text" class="py-a" placeholder="A">
+          <input type="text" class="py-b" placeholder="B">
+          <input type="text" class="py-c" placeholder="C" disabled style="width:100px">
+        </div>
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="interface.js"></script>
+    <script type="text/javascript">
+
+    function calcFahrenheitToCelcius(tempF){
+      return (tempF-32)*(5/9);
+
+    }
+
+    function calcCelciusToFarenheit(tempC){
+      return tempC*(9/5)+32;
+    }
+
+    function calcCircumference(r){
+      return 2*(Math.PI)*r;
+    }
+
+    function calcLongestSide(pyA, pyB){
+      return Math.sqrt((pyA * pyA) + (pyB * pyB));
+    }
+
+    </script>
+  </body>
+</html>
