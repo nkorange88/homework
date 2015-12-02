@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: rgb(226, 226, 226);
+      background-image: url(http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png);
+      background-size: 200px 200px;
+      font-family: 'lucida Grande', sans-serif;
+      margin: auto;
+      text-decoration: none;
+
+
+    }
+
+    header{
+      overflow: auto;
+      margin: auto;
+      background-color: #c4c4c4;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 1.5px solid #7E7F7E;
+
+    }
+
+    nav{
+      float:right;
+      height: 55px;
+      padding-top: 10px;
+    }
+
+    ul{
+      list-style: none;
+      display:inline;
+    }
+    li{
+      display: inline;
+      padding: 10px 15px;
+    }
+
+    li a {
+      font-size: 1em;
+      color:#fff;
+      text-shadow: #53566f 1px 1px;
+    }
+
+    li button {
+      font-family: 'lucida Grande', sans-serif;
+      font-size: 1em;
+      background-color: #3753a1;
+      border: 1px solid #263e7f;
+      border-radius: 3px;
+      padding: 10px 20px;
+      color:#fff;
+      text-shadow: #53566f 1px 1px;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    main{
+      width: 76.4%;
+      max-width: 709px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section{
+      background-color: white;
+      margin-top: 50px;
+      padding-top:10px;
+      padding-bottom:15px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 6px;
+      box-shadow: #BBBBBB 1px 1px 8px 1px;
+
+    }
+
+    h1{
+      font-size: 1.53em;
+    }
+
+    section p{
+      font-size: 1.0em;
+    }
+
+    footer{
+      width: 76.4%;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      text-align: center;
+      text-shadow: #fff 1px 1px;
+    }
+
+    hr{
+      height: .5px;
+      color: #Cecece;
+      box-shadow: #fff 0px 1px 1px;
+    }
+
+    footer p{
+      margin-top: 25px;
+      font-size: .85em;
+      color: #949894;
+    }
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var header = document.createElement("header")
+    var body = document.querySelector("body")
+
+    body.appendChild(header)
+
+    var img = document.createElement("img")
+    img.setAttribute("src", "http://cloud.avandamiri.com/image/423B1n2p2v0U/acme-corp.jpg")
+    img.setAttribute("alt", "ACME Corp Logo")
+    img.setAttribute("width", "200px")
+    img.setAttribute("height", "55px")
+    header.appendChild(img)
+
+    var nav = document.createElement("nav")
+    header.appendChild(nav)
+
+    var ul = document.createElement("ul")
+    nav.appendChild(ul)
+
+    var li = document.createElement("li")
+    ul.appendChild(li)
+
+    var a = document.createElement("a")
+    li.appendChild(a)
+    a.textContent = "Products"
+
+    var li = document.createElement("li")
+    ul.appendChild(li)
+
+    var button = document.createElement("button")
+    li.appendChild(button)
+    button.textContent = "Sign Up"
+
+    var main = document.createElement("main")
+
+    body.appendChild(main)
+
+    var section = document.createElement("section")
+    main.appendChild(section)
+
+    var heading = document.createElement("h1")
+    section.appendChild(heading)
+    heading.textContent = "Welcome to ACME Corp"
+
+    var p = document.createElement("p")
+    section.appendChild(p)
+    p.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+
+    var p = document.createElement("p")
+    section.appendChild(p)
+    p.textContent = "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+    var footer = document.createElement("footer")
+    body.appendChild(footer)
+
+    var hr = document.createElement("hr")
+    footer.appendChild(hr)
+
+    var p = document.createElement("p")
+    footer.appendChild(p)
+    p.textContent = "Copyright, 2015"
+
+    </script>
+  </body>
+</html>
