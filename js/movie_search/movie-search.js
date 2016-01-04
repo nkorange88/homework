@@ -30,12 +30,12 @@ function resultsReceived(results) {
     movieList.classList.add("movie")
 
     var img = document.createElement("img")
-    img.setAttribute("src", results["Search"][i]["Poster"])
+    img.setAttribute("src", "http://img.omdbapi.com/?apikey=3088e9b6&h=376&i="+results["Search"][i]["imdbID"])
 
     var titleContainer = document.createElement("div")
     var title = document.createElement("a")
     title.textContent = results["Search"][i]["Title"];
-    title.setAttribute("href","http://img.omdbapi.com/?apikey=3088e9b6&h=258&i="+results["Search"][i]["imdbID"])
+    title.setAttribute("href","http://www.imdb.com/title/"+results["Search"][i]["imdbID"])
     titleContainer.classList.add("movie-title");
 
     var year = document.createElement("div");
