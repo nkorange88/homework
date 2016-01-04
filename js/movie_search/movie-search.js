@@ -18,9 +18,13 @@ function formSubmitted(event) {
   event.preventDefault();
   var url = "http://omdbapi.com/?s=" + $("#query").val();
   $.get(url, resultsReceived);
+  $('li').remove();
+  document.getElementById("movie-search-form").reset();
 }
 
 var ul = document.querySelector("#movies");
+
+
 
 function resultsReceived(results) {
   for (var i = 0; i < results.Search.length; i++) {
